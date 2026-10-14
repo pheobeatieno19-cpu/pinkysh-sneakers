@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinkysh SNEAKERS | Sneakers for Every Girl ♡</title>
+  <meta name="description" content="Shop cute, comfy, and stylish pink sneakers in Kenya. Fast nationwide delivery, M-Pesa and card payments accepted. Handpicked styles for your everyday vibe.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-content">
+      <span>✨ <strong>FREE NATIONWIDE DELIVERY</strong> ON SNEAKER ORDERS OVER KSH 5,000</span>
+      <span class="announcement-divider">•</span>
+      <span>💖 GET 30% OFF SELECTED STYLES WITH CODE: <strong class="promo-badge-text">PINK30</strong></span>
+      <span class="announcement-divider">•</span>
+      <span>🇰🇪 PAY SAFELY VIA M-PESA &amp; CARD</span>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a href="#" class="brand-logo" id="brandLogo" aria-label="Pinkysh SNEAKERS Home">
+        <div class="logo-script">Pinkysh<span class="logo-heart">♡</span></div>
+        <span class="logo-sub">S N E A K E R S</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="mainNav" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active" id="navHome">Home</a>
+        <a href="#shop" class="nav-link" id="navShop">Shop</a>
+        <a href="#new-arrivals" class="nav-link" id="navNewArrivals">New Arrivals</a>
+        <a href="#best-sellers" class="nav-link" id="navBestSellers">Best Sellers</a>
+        <a href="#about" class="nav-link" id="navAbout">About</a>
+        <a href="#contact" class="nav-link" id="navContact">Contact</a>
+      </nav>
+
+      <!-- Search & User Actions -->
+      <div class="header-actions">
+        <!-- Search Bar with Live Filter -->
+        <div class="search-box-wrapper" id="searchBoxWrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="sneakerSearchInput" class="search-input" placeholder="Search sneakers..." autocomplete="off">
+          <button class="search-clear-btn" id="searchClearBtn" aria-label="Clear search">×</button>
+          
+          <!-- Search Dropdown Results -->
+          <div class="search-dropdown" id="searchDropdown">
+            <div class="search-dropdown-title">Matching Sneakers</div>
+            <div class="search-dropdown-list" id="searchDropdownList"></div>
+          </div>
+        </div>
+
+        <!-- Account Icon -->
+        <button class="header-icon-btn" id="accountBtn" aria-label="My Account" title="My Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+
+        <!-- Cart Icon with badge -->
+        <button class="header-icon-btn cart-icon-btn" id="cartToggleBtn" aria-label="Shopping Cart" title="Shopping Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="badge-count" id="cartBadgeCount">3</span>
+        </button>
+
+        <!-- Wishlist Icon with badge -->
+        <button class="header-icon-btn wishlist-icon-btn" id="wishlistToggleBtn" aria-label="Wishlist" title="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count wishlist-count" id="wishlistBadgeCount">2</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <div class="mobile-nav-header">
+        <span class="logo-script">Pinkysh<span class="logo-heart">♡</span></span>
+        <button class="close-drawer-btn" id="closeMobileNavBtn">×</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link active">Home</a>
+        <a href="#shop" class="mobile-nav-link">Shop All Sneakers</a>
+        <a href="#new-arrivals" class="mobile-nav-link">New Arrivals</a>
+        <a href="#best-sellers" class="mobile-nav-link">Best Sellers</a>
+        <a href="#about" class="mobile-nav-link">About Us</a>
+        <a href="#contact" class="mobile-nav-link">Contact &amp; Delivery</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a href="https://wa.me/254700000000" class="btn btn-whatsapp w-100" target="_blank">
+          <span>💬 Order on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-content" id="mainContent">
+    <!-- HERO SECTION (Matches Screenshot Exactly) -->
+    <section class="hero-section container" id="home">
+      <div class="hero-grid">
+        <!-- Main Large Hero Card (Left) -->
+        <div class="hero-main-card">
+          <div class="hero-main-decorations">
+            <span class="sparkle sparkle-1">✦</span>
+            <span class="sparkle sparkle-2">✧</span>
+            <span class="floating-heart heart-1">♡</span>
+            <span class="floating-heart heart-2">♡</span>
+          </div>
+
+          <div class="hero-text-content">
+            <div class="hero-badge">
+              <span>CUTE STEPS</span>
+              <span class="badge-star">✦</span>
+              <span>BIGGER DREAMS</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Sneakers for <br>
+              <span class="hero-title-script">Every Girl <span class="title-heart">♡</span></span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Trendy, comfy and stylish sneakers that match your vibe. 💖
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#shop" class="btn btn-primary hero-btn" id="heroShopNowBtn">
+                <span>Shop Now</span>
+                <span class="btn-arrow">→</span>
+              </a>
+            </div>
+
+            <!-- Value propositions row -->
+            <div class="hero-perks-row">
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                  </svg>
+                </div>
+                <div class="perk-label">Nationwide<br>Delivery</div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <div class="perk-label">Secure<br>Payments</div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                    <line x1="5" y1="15" x2="9" y2="15"></line>
+                  </svg>
+                </div>
+                <div class="perk-label">M-Pesa &amp; Card<br>Accepted</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual & Floating Badge -->
+          <div class="hero-image-container">
+            <!-- Floating handwritten sticker -->
+            <div class="floating-quote-badge" id="heroSticker">
+              <span class="quote-text">Good Shoes<br>Brighter Days</span>
+              <span class="quote-heart">♡</span>
+            </div>
+
+            <div class="hero-image-wrapper">
+              <img src="assets/hero_hd.jpg" alt="Pinkysh signature pink sneakers with bow laces and heart socks" class="hero-sneaker-img" id="heroSneakerImg">
+            </div>
+
+            <!-- Carousel Pagination Dots -->
+            <div class="hero-dots" id="heroDots">
+              <button class="hero-dot active" data-slide="0" aria-label="Hero Slide 1"></button>
+              <button class="hero-dot" data-slide="1" aria-label="Hero Slide 2"></button>
+              <button class="hero-dot" data-slide="2" aria-label="Hero Slide 3"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Stacked Promo Cards -->
+        <div class="hero-side-cards">
+          <!-- Card 1: New Arrivals -->
+          <div class="side-promo-card card-new-arrivals" id="cardNewArrivals">
+            <div class="promo-text-content">
+              <h2 class="promo-title">New<br>Arrivals</h2>
+              <p class="promo-desc">Fresh styles just for you.</p>
+              <a href="#new-arrivals" class="btn btn-pill-small" id="shopNewBtn">
+                <span>Shop New</span>
+                <span class="btn-arrow">→</span>
+              </a>
+            </div>
+            <div class="promo-image-box">
+              <img src="assets/new_arrivals_crop.jpg" alt="New Pink Floral Sneakers" class="promo-sneaker-img">
+            </div>
+          </div>
+
+          <!-- Card 2: 30% OFF Sale -->
+          <div class="side-promo-card card-sale" id="cardSale">
+            <div class="promo-text-content">
+              <span class="promo-tag">Up to</span>
+              <h2 class="promo-title-discount">30% OFF</h2>
+              <p class="promo-desc">Selected Sneakers</p>
+              <div class="limited-time-tag">Limited Time</div>
+              <a href="#sale" class="btn btn-pill-small btn-sale" id="shopSaleBtn">
+                <span>Shop Sale</span>
+                <span class="btn-arrow">→</span>
+              </a>
+            </div>
+            <div class="promo-image-box">
+              <img src="assets/sale_crop.jpg" alt="Selected Pink Heart Sneakers on sale" class="promo-sneaker-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY PILLS BAR (Matches Screenshot) -->
+    <section class="category-pills-section container" id="categoriesSection">
+      <div class="category-pills-scroll" id="categoryPills">
+        <button class="category-pill" data-category="all" id="pillAll">
+          <span class="pill-icon">⭐</span>
+          <span class="pill-name">All Sneakers</span>
+        </button>
+
+        <button class="category-pill active" data-category="pink-collection" id="pillPink">
+          <span class="pill-icon">♡</span>
+          <span class="pill-name">Pink Collection</span>
+        </button>
+
+        <button class="category-pill" data-category="running" id="pillRunning">
+          <span class="pill-icon">👟</span>
+          <span class="pill-name">Running</span>
+        </button>
+
+        <button class="category-pill" data-category="casual" id="pillCasual">
+          <span class="pill-icon">👠</span>
+          <span class="pill-name">Casual</span>
+        </button>
+
+        <button class="category-pill" data-category="new" id="pillNew">
+          <span class="pill-icon">✨</span>
+          <span class="pill-name">New Arrivals</span>
+        </button>
+
+        <button class="category-pill" data-category="bestseller" id="pillBestSellers">
+          <span class="pill-icon">👑</span>
+          <span class="pill-name">Best Sellers</span>
+        </button>
+
+        <button class="category-pill" data-category="chunky-platform" id="pillChunky">
+          <span class="pill-icon">🥿</span>
+          <span class="pill-name">Chunky Platform</span>
+        </button>
+
+        <button class="category-pill" data-category="white-collection" id="pillWhite">
+          <span class="pill-icon">🤍</span>
+          <span class="pill-name">White Collection</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- MAIN PRODUCT & SIDEBAR SECTION (Matches Screenshot Layout) -->
+    <section class="featured-section container" id="shop">
+      <div class="main-layout-grid">
+        <!-- Left Product Showcase (75% width) -->
+        <div class="products-column">
+          <!-- Section Heading -->
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">
+                Featured Sneakers <span class="title-heart-small">♡</span>
+              </h2>
+              <p class="section-subtitle">Handpicked styles for your everyday look.</p>
+            </div>
+            <a href="#all-sneakers" class="view-all-link" id="viewAllSneakers">
+              <span>View All</span>
+              <span>→</span>
+            </a>
+          </div>
+
+          <!-- Product Cards Grid (4 in a row) -->
+          <div class="products-grid" id="featuredProductsGrid">
+            <!-- Product 1: Sweet Heart Sneakers -->
+            <article class="product-card" data-product-id="prod-1" data-category="pink-collection bestseller">
+              <div class="product-image-container">
+                <span class="product-badge badge-bestseller">Best Seller</span>
+                <button class="wishlist-btn active" data-product-id="prod-1" aria-label="Save to Wishlist" title="Save to Wishlist">
+                  <svg viewBox="0 0 24 24" class="heart-icon">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+                <div class="product-img-frame" onclick="openQuickView('prod-1')">
+                  <img src="assets/prod_sweet_heart.jpg" alt="Sweet Heart Sneakers" class="product-img">
+                  <span class="quick-view-overlay">Quick View 👁️</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title" onclick="openQuickView('prod-1')">Sweet Heart Sneakers</h3>
+                <div class="product-price">KSh 3,500</div>
+                
+                <div class="product-rating-swatches">
+                  <div class="rating-row">
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews-count">(120)</span>
+                  </div>
+                  <div class="swatches-row">
+                    <span class="color-swatch swatch-pink active" title="Baby Pink"></span>
+                    <span class="color-swatch swatch-white" title="Pure White"></span>
+                    <span class="color-swatch swatch-mauve" title="Soft Mauve"></span>
+                  </div>
+                </div>
+
+                <button class="btn btn-add-to-cart" onclick="addToCart('prod-1')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cart-btn-icon">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 2: Blush Runner -->
+            <article class="product-card" data-product-id="prod-2" data-category="pink-collection running new">
+              <div class="product-image-container">
+                <span class="product-badge badge-new">New</span>
+                <button class="wishlist-btn" data-product-id="prod-2" aria-label="Save to Wishlist" title="Save to Wishlist">
+                  <svg viewBox="0 0 24 24" class="heart-icon">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+                <div class="product-img-frame" onclick="openQuickView('prod-2')">
+                  <img src="assets/prod_blush_runner.jpg" alt="Blush Runner" class="product-img">
+                  <span class="quick-view-overlay">Quick View 👁️</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title" onclick="openQuickView('prod-2')">Blush Runner</h3>
+                <div class="product-price">KSh 3,800</div>
+                
+                <div class="product-rating-swatches">
+                  <div class="rating-row">
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews-count">(95)</span>
+                  </div>
+                  <div class="swatches-row">
+                    <span class="color-swatch swatch-pink active" title="Blush Pink"></span>
+                    <span class="color-swatch swatch-peach" title="Soft Peach"></span>
+                    <span class="color-swatch swatch-cream" title="Warm Cream"></span>
+                  </div>
+                </div>
+
+                <button class="btn btn-add-to-cart" onclick="addToCart('prod-2')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cart-btn-icon">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 3: Rose Petal -->
+            <article class="product-card" data-product-id="prod-3" data-category="pink-collection casual">
+              <div class="product-image-container">
+                <button class="wishlist-btn active" data-product-id="prod-3" aria-label="Save to Wishlist" title="Save to Wishlist">
+                  <svg viewBox="0 0 24 24" class="heart-icon">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+                <div class="product-img-frame" onclick="openQuickView('prod-3')">
+                  <img src="assets/prod_rose_petal.jpg" alt="Rose Petal" class="product-img">
+                  <span class="quick-view-overlay">Quick View 👁️</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title" onclick="openQuickView('prod-3')">Rose Petal</h3>
+                <div class="product-price">KSh 3,200</div>
+                
+                <div class="product-rating-swatches">
+                  <div class="rating-row">
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews-count">(78)</span>
+                  </div>
+                  <div class="swatches-row">
+                    <span class="color-swatch swatch-pink active" title="Rose Petal"></span>
+                    <span class="color-swatch swatch-white" title="Pearl White"></span>
+                    <span class="color-swatch swatch-lavender" title="Lavender Tint"></span>
+                  </div>
+                </div>
+
+                <button class="btn btn-add-to-cart" onclick="addToCart('prod-3')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cart-btn-icon">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 4: Pretty Girl Vibes -->
+            <article class="product-card" data-product-id="prod-4" data-category="pink-collection casual bestseller">
+              <div class="product-image-container">
+                <button class="wishlist-btn" data-product-id="prod-4" aria-label="Save to Wishlist" title="Save to Wishlist">
+                  <svg viewBox="0 0 24 24" class="heart-icon">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+                <div class="product-img-frame" onclick="openQuickView('prod-4')">
+                  <img src="assets/prod_pretty_girl.jpg" alt="Pretty Girl Vibes" class="product-img">
+                  <span class="quick-view-overlay">Quick View 👁️</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title" onclick="openQuickView('prod-4')">Pretty Girl Vibes</h3>
+                <div class="product-price">KSh 4,000</div>
+                
+                <div class="product-rating-swatches">
+                  <div class="rating-row">
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews-count">(101)</span>
+                  </div>
+                  <div class="swatches-row">
+                    <span class="color-swatch swatch-pink active" title="Pink &amp; White"></span>
+                    <span class="color-swatch swatch-dark" title="Midnight Pink"></span>
+                  </div>
+                </div>
+
+                <button class="btn btn-add-to-cart" onclick="addToCart('prod-4')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cart-btn-icon">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 5: Cloud Chunky Beige Platform -->
+            <article class="product-card" data-product-id="prod-7" data-category="chunky-platform casual new">
+              <div class="product-image-container">
+                <span class="product-badge badge-new">New</span>
+                <button class="wishlist-btn" data-product-id="prod-7" aria-label="Save to Wishlist" title="Save to Wishlist">
+                  <svg viewBox="0 0 24 24" class="heart-icon">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+                <div class="product-img-frame" onclick="openQuickView('prod-7')">
+                  <img src="assets/prod_cloud_chunky_beige.jpg" alt="Cloud Chunky Beige Platform Sneakers" class="product-img">
+                  <span class="quick-view-overlay">Quick View 👁️</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title" onclick="openQuickView('prod-7')">Cloud Chunky Platform</h3>
+                <div class="product-price">KSh 4,500</div>
+                <div class="product-rating-swatches">
+                  <div class="rating-row">
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews-count">(89)</span>
+                  </div>
+                  <div class="swatches-row">
+                    <span class="color-swatch swatch-beige active" title="Warm Beige"></span>
+                    <span class="color-swatch swatch-cream" title="Ivory Cream"></span>
+                    <span class="color-swatch swatch-dark" title="Deep Brown"></span>
+                  </div>
+                </div>
+                <button class="btn btn-add-to-cart" onclick="addToCart('prod-7')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cart-btn-icon">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 6: White Sun Charm Sneakers -->
+            <article class="product-card" data-product-id="prod-8" data-category="white-collection casual bestseller">
+              <div class="product-image-container">
+                <span class="product-badge badge-bestseller">Best Seller</span>
+                <button class="wishlist-btn" data-product-id="prod-8" aria-label="Save to Wishlist" title="Save to Wishlist">
+                  <svg viewBox="0 0 24 24" class="heart-icon">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+                <div class="product-img-frame" onclick="openQuickView('prod-8')">
+                  <img src="assets/prod_sun_charm_white.jpg" alt="White Sun Charm Chunky Sneakers" class="product-img">
+                  <span class="quick-view-overlay">Quick View 👁️</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title" onclick="openQuickView('prod-8')">Sun Charm Sneakers</h3>
+                <div class="product-price">KSh 4,200</div>
+                <div class="product-rating-swatches">
+                  <div class="rating-row">
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews-count">(143)</span>
+                  </div>
+                  <div class="swatches-row">
+                    <span class="color-swatch swatch-white active" title="Pure White"></span>
+                    <span class="color-swatch swatch-cream" title="Soft Ivory"></span>
+                    <span class="color-swatch swatch-gold" title="Gold Charm"></span>
+                  </div>
+                </div>
+                <button class="btn btn-add-to-cart" onclick="addToCart('prod-8')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cart-btn-icon">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Right Sidebar (25% width - Matches Screenshot) -->
+        <aside class="sidebar-column">
+          <!-- Style Your Story Banner Card -->
+          <div class="sidebar-story-card" id="storyCard">
+            <div class="story-image-wrapper">
+              <img src="assets/style_story_banner.jpg" alt="Style Your Story - Pink sneakers street look" class="story-img">
+              <div class="story-overlay">
+                <h3 class="story-title">Style<br>Your<br>Story <span class="story-heart">♡</span></h3>
+                <a href="#pink-tribe" class="btn btn-pill-white story-btn" id="exploreCollectionBtn">
+                  <span>Explore Collection</span>
+                  <span class="btn-arrow">→</span>
+                </a>
+              </div>
+            </div>
+            <!-- Story carousel dots -->
+            <div class="story-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <!-- Service / Trust Info List (Matches Screenshot) -->
+          <div class="service-cards-stack">
+            <!-- Order on WhatsApp -->
+            <div class="service-card" onclick="openWhatsAppModal()">
+              <div class="service-icon-box icon-whatsapp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="service-card-text">
+                <h4 class="service-title">Order on WhatsApp</h4>
+                <p class="service-desc">Chat with us easily.</p>
+              </div>
+              <span class="service-action-arrow">→</span>
+            </div>
+
+            <!-- M-Pesa & Card Payments -->
+            <div class="service-card" onclick="openPaymentInfoModal()">
+              <div class="service-icon-box icon-mpesa">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line>
+                </svg>
+              </div>
+              <div class="service-card-text">
+                <h4 class="service-title">M-Pesa &amp; Card Payments</h4>
+                <p class="service-desc">Safe and convenient.</p>
+              </div>
+              <span class="service-action-arrow">→</span>
+            </div>
+
+            <!-- Fast Delivery in Kenya -->
+            <div class="service-card" onclick="openDeliveryModal()">
+              <div class="service-icon-box icon-delivery">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="1" y="3" width="15" height="13"></rect>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                  <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                  <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+              </div>
+              <div class="service-card-text">
+                <h4 class="service-title">Fast Delivery in Kenya</h4>
+                <p class="service-desc">Get your sneakers at your doorstep.</p>
+              </div>
+              <span class="service-action-arrow">→</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- NEW COLLECTION HIGHLIGHTS (Extra Rich Experience) -->
+    <section class="collection-strip container" id="new-arrivals">
+      <div class="strip-card">
+        <div class="strip-content">
+          <span class="strip-tag">🌸 FRESH DROP 2026</span>
+          <h2 class="strip-title">The Pastel Dreams Edition</h2>
+          <p class="strip-p">Ultralight cloud soles, memory foam insoles, and delicate satin details crafted for all-day effortless glam.</p>
+          <div class="strip-buttons">
+            <button class="btn btn-primary" onclick="filterCategory('pink-collection')">Explore All Pink Styles</button>
+            <button class="btn btn-outline" onclick="openSizeGuideModal()">Size Guide (EU 36 - 41)</button>
+          </div>
+        </div>
+        <div class="strip-image">
+          <img src="assets/pink_air_sneaker.jpg" alt="Pastel Dreams Edition Sneaker" class="strip-sneaker-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- KENYA PINK TRIBE GALLERY / INSTAGRAM FEED -->
+    <section class="pink-tribe-section container" id="pink-tribe">
+      <div class="section-center-header">
+        <span class="sub-badge">INSTAGRAM @PINKYSHEVERYGIRL</span>
+        <h2 class="section-title">Join The Pink Tribe ♡</h2>
+        <p class="section-subtitle">Tag us wearing your favorite kicks to get featured on our page!</p>
+      </div>
+
+      <div class="tribe-gallery-grid">
+        <div class="tribe-card">
+          <img src="assets/pink_pastel_runner.jpg" alt="Pinkysh street style Nairobi" class="tribe-img">
+          <div class="tribe-overlay">
+            <span>@wanjiku.ke</span>
+            <span class="tribe-likes">💖 1.4k</span>
+          </div>
+        </div>
+        <div class="tribe-card">
+          <img src="assets/pink_streetwear.jpg" alt="Pinkysh casual fit" class="tribe-img">
+          <div class="tribe-overlay">
+            <span>@neema_vibes</span>
+            <span class="tribe-likes">💖 2.1k</span>
+          </div>
+        </div>
+        <div class="tribe-card">
+          <img src="assets/pink_classic_sport.jpg" alt="Pinkysh campus looks" class="tribe-img">
+          <div class="tribe-overlay">
+            <span>@brenda_style</span>
+            <span class="tribe-likes">💖 980</span>
+          </div>
+        </div>
+        <div class="tribe-card">
+          <img src="assets/hero_hd.jpg" alt="Pinkysh unboxing joy" class="tribe-img">
+          <div class="tribe-overlay">
+            <span>@carol_sneakerhead</span>
+            <span class="tribe-likes">💖 3.2k</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS SECTION -->
+    <section class="reviews-section container" id="about">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Love Notes from Our Girls 💌</h2>
+          <p class="section-subtitle">Over 5,000+ happy sneaker babes across Kenya.</p>
+        </div>
+        <div class="overall-rating-badge">
+          <span class="rating-num">4.9</span>
+          <span class="stars">★★★★★</span>
+          <span class="verified-text">Verified Kenyan Orders</span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-bubble">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">“Ordered the Sweet Heart Sneakers in Nairobi and got them in 3 hours via rider! The bow laces are ridiculously cute and they are surprisingly so comfortable for full day walking!”</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">FN</div>
+            <div>
+              <strong>Faith Nyambura</strong>
+              <div class="reviewer-loc">📍 Westlands, Nairobi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-bubble">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">“Paid via M-Pesa prompt smoothly on this site. The shoe packaging smelled like strawberries and included cute sticker packs! 10/10 shopping experience, Pinkysh is my go-to now!”</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">MK</div>
+            <div>
+              <strong>Mercy Kiprono</strong>
+              <div class="reviewer-loc">📍 Nyali, Mombasa</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-bubble">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">“The Blush Runners are pure fire! Perfect sizing (got my normal EU 38), super lightweight sole, and everyone at university keeps asking where I got them!”</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">AO</div>
+            <div>
+              <strong>Amina Omar</strong>
+              <div class="reviewer-loc">📍 Kilimani, Nairobi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER / DISCOUNT BANNER -->
+    <section class="newsletter-section container">
+      <div class="newsletter-card">
+        <div class="newsletter-text">
+          <span class="newsletter-heart">♡</span>
+          <h3>Get KSh 500 Off Your First Order</h3>
+          <p>Subscribe to our Pink Club for VIP sneaker drop alerts, styling guides, and exclusive discount codes.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Enter your email address..." required id="newsletterEmail">
+          <button type="submit" class="btn btn-primary">Join Club</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-col brand-col">
+        <div class="logo-script">Pinkysh<span class="logo-heart">♡</span></div>
+        <span class="logo-sub">S N E A K E R S</span>
+        <p class="footer-desc">
+          Kenya's most loved cute sneakers brand. Empowering girls to walk with confidence, softness, and style.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+          <a href="#" aria-label="Pinterest">📌</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Shop Collections</h4>
+        <ul class="footer-links">
+          <li><a href="#shop" onclick="filterCategory('pink-collection')">Pink Collection</a></li>
+          <li><a href="#shop" onclick="filterCategory('new')">New Arrivals</a></li>
+          <li><a href="#shop" onclick="filterCategory('bestseller')">Best Sellers</a></li>
+          <li><a href="#shop" onclick="filterCategory('running')">Chunky Runners</a></li>
+          <li><a href="#shop" onclick="filterCategory('casual')">Casual Sweet Sneaks</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Customer Care</h4>
+        <ul class="footer-links">
+          <li><a href="javascript:void(0)" onclick="openSizeGuideModal()">Shoe Size Guide (EU 36-41)</a></li>
+          <li><a href="javascript:void(0)" onclick="openDeliveryModal()">Delivery Policy &amp; Rates</a></li>
+          <li><a href="javascript:void(0)" onclick="openDeliveryModal()">Free Size Exchanges</a></li>
+          <li><a href="javascript:void(0)" onclick="openPaymentInfoModal()">M-Pesa Payment Guide</a></li>
+          <li><a href="javascript:void(0)" onclick="openWhatsAppModal()">WhatsApp Support Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Nairobi Studio &amp; Pickup</h4>
+        <p class="footer-contact-item">📍 Greenhouse Mall, 2nd Floor, Ngong Road, Nairobi</p>
+        <p class="footer-contact-item">📞 +254 (0) 790 123 456</p>
+        <p class="footer-contact-item">⏰ Mon - Sat: 9:00 AM - 7:00 PM</p>
+        
+        <div class="payment-badges-row">
+          <span class="pay-badge mpesa-badge">M-PESA</span>
+          <span class="pay-badge visa-badge">VISA</span>
+          <span class="pay-badge master-badge">Mastercard</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Pinkysh Sneakers Kenya. All Rights Reserved. Made with love for every sneaker girl ♡</p>
+        <div class="footer-sub-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Track Your Order</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <div class="floating-whatsapp-btn" onclick="openWhatsAppModal()" title="Chat on WhatsApp">
+    <span class="wa-tooltip">Order on WhatsApp 💬</span>
+    <div class="wa-icon-circle">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.276-.1-.476-.15-.676.15-.2.301-.776.979-.952 1.18-.176.2-.351.226-.652.075-.301-.15-1.27-.468-2.42-1.493-.896-.798-1.501-1.784-1.677-2.085-.176-.301-.019-.464.132-.614.135-.135.301-.351.451-.527.151-.176.201-.301.301-.502.1-.2.05-.376-.025-.526-.075-.15-.676-1.63-.927-2.233-.244-.588-.493-.508-.676-.517-.175-.008-.376-.01-.577-.01-.2 0-.527.075-.803.376s-1.054 1.03-1.054 2.51 1.079 2.912 1.23 3.113c.15.2 2.122 3.24 5.14 4.544.718.31 1.278.496 1.716.635.722.23 1.38.197 1.9.12.58-.087 1.78-.727 2.03-1.43.25-.702.25-1.304.175-1.43-.075-.125-.276-.201-.577-.35zM12.04 2C6.51 2 2.02 6.49 2.02 12.02c0 1.98.58 3.91 1.68 5.56L2 22.06l4.63-1.65c1.59.97 3.42 1.61 5.41 1.61 5.53 0 10.02-4.49 10.02-10.02C22.06 6.49 17.57 2 12.04 2z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- SLIDE-OUT CART DRAWER -->
+  <div class="drawer-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart Drawer">
+    <div class="cart-drawer-header">
+      <div class="cart-header-title">
+        <span class="cart-title-text">My Shopping Bag ♡</span>
+        <span class="cart-badge-pill" id="cartDrawerCount">3 items</span>
+      </div>
+      <button class="drawer-close-btn" onclick="closeCart()" aria-label="Close cart">×</button>
+    </div>
+
+    <!-- Free Delivery Progress Bar -->
+    <div class="free-delivery-tracker" id="deliveryTracker">
+      <div class="tracker-text" id="trackerText">You are <strong id="trackerAmount">KSh 1,500</strong> away from <strong>FREE DELIVERY!</strong> 🎉</div>
+      <div class="tracker-progress-bg">
+        <div class="tracker-progress-fill" id="trackerFill" style="width: 70%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items List -->
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Items dynamically populated via JavaScript -->
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-drawer-footer">
+      <!-- Promo code coupon -->
+      <div class="cart-promo-box">
+        <input type="text" id="promoCodeInput" placeholder="Promo code (try PINK30)" value="PINK30">
+        <button class="btn btn-apply-promo" onclick="applyPromoCode()">Apply</button>
+      </div>
+      <div class="promo-discount-alert" id="promoDiscountAlert">
+        ✨ 30% OFF applied on selected items!
+      </div>
+
+      <div class="cart-subtotal-breakdown">
+        <div class="breakdown-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotalText">KSh 10,500</span>
+        </div>
+        <div class="breakdown-row discount-row" id="discountRow">
+          <span>Pink Sale Discount (30%)</span>
+          <span id="cartDiscountText">- KSh 1,050</span>
+        </div>
+        <div class="breakdown-row">
+          <span>Estimated Delivery (Kenya)</span>
+          <span class="free-shipping-tag" id="deliveryFeeText">FREE</span>
+        </div>
+        <div class="breakdown-row total-row">
+          <span>Total Due</span>
+          <span class="total-amount" id="cartTotalText">KSh 9,450</span>
+        </div>
+      </div>
+
+      <div class="checkout-actions-stack">
+        <button class="btn btn-primary w-100 btn-checkout" onclick="openMpesaModal()">
+          <span>Pay with M-Pesa / Card</span>
+          <span>→</span>
+        </button>
+        <button class="btn btn-whatsapp w-100" onclick="checkoutViaWhatsApp()">
+          <span>Checkout via WhatsApp</span>
+          <span>💬</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- SLIDE-OUT WISHLIST DRAWER -->
+  <div class="drawer-overlay" id="wishlistOverlay" onclick="closeWishlist()"></div>
+  <aside class="cart-drawer wishlist-drawer" id="wishlistDrawer" aria-label="Wishlist Drawer">
+    <div class="cart-drawer-header">
+      <div class="cart-header-title">
+        <span class="cart-title-text">My Wishlist ♡</span>
+        <span class="cart-badge-pill" id="wishlistDrawerCount">2 items</span>
+      </div>
+      <button class="drawer-close-btn" onclick="closeWishlist()" aria-label="Close wishlist">×</button>
+    </div>
+
+    <div class="cart-items-list" id="wishlistItemsList">
+      <!-- Wishlist items dynamically populated -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <button class="btn btn-primary w-100" onclick="moveAllWishlistToCart()">
+        Move All to Shopping Bag 🛍️
+      </button>
+    </div>
+  </aside>
+
+  <!-- QUICK VIEW PRODUCT MODAL -->
+  <div class="modal-overlay" id="quickViewOverlay" onclick="closeQuickView(event)">
+    <div class="modal-container quick-view-modal" id="quickViewContainer" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeQuickView()">×</button>
+      
+      <div class="quick-view-grid">
+        <!-- Product Image Gallery -->
+        <div class="quick-view-gallery">
+          <div class="main-zoom-image-wrapper">
+            <img src="assets/prod_sweet_heart.jpg" alt="Selected Sneaker" id="qvMainImage">
+            <span class="qv-badge" id="qvBadge">Best Seller</span>
+          </div>
+          <div class="qv-thumbnails" id="qvThumbnails">
+            <!-- Thumbnails rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="quick-view-details">
+          <div class="qv-category-tag" id="qvCategory">Pink Collection</div>
+          <h2 class="qv-title" id="qvTitle">Sweet Heart Sneakers</h2>
+          
+          <div class="qv-price-row">
+            <span class="qv-price" id="qvPrice">KSh 3,500</span>
+            <span class="qv-old-price" id="qvOldPrice">KSh 4,500</span>
+            <span class="qv-stock-status">In Stock (Nairobi Hub)</span>
+          </div>
+
+          <div class="qv-rating-row">
+            <span class="stars">★★★★★</span>
+            <span class="qv-rating-text" id="qvRatingText">4.9 / 5.0 (120 verified reviews)</span>
+          </div>
+
+          <p class="qv-desc" id="qvDesc">
+            Sweet, lightweight, and engineered for maximum charm. Features satin bow lacing, delicate heart embroidery, and cloud-soft memory cushion support.
+          </p>
+
+          <!-- Select Size -->
+          <div class="qv-selector-group">
+            <div class="selector-header">
+              <label>Select Size (EU):</label>
+              <button class="size-guide-trigger" onclick="openSizeGuideModal()">Size Chart 📏</button>
+            </div>
+            <div class="size-pill-row" id="qvSizeRow">
+              <button class="size-pill" onclick="selectSize(this)">36</button>
+              <button class="size-pill active" onclick="selectSize(this)">37</button>
+              <button class="size-pill" onclick="selectSize(this)">38</button>
+              <button class="size-pill" onclick="selectSize(this)">39</button>
+              <button class="size-pill" onclick="selectSize(this)">40</button>
+              <button class="size-pill" onclick="selectSize(this)">41</button>
+            </div>
+          </div>
+
+          <!-- Color Options -->
+          <div class="qv-selector-group">
+            <label>Colorway: <strong id="qvSelectedColor">Baby Pink</strong></label>
+            <div class="qv-colors-row" id="qvColorsRow">
+              <span class="color-swatch swatch-pink active" onclick="selectQvColor(this, 'Baby Pink')"></span>
+              <span class="color-swatch swatch-white" onclick="selectQvColor(this, 'Pure White')"></span>
+              <span class="color-swatch swatch-mauve" onclick="selectQvColor(this, 'Soft Mauve')"></span>
+            </div>
+          </div>
+
+          <!-- Quantity & Add to Cart -->
+          <div class="qv-actions-row">
+            <div class="quantity-stepper">
+              <button onclick="decrementQvQty()">-</button>
+              <input type="number" id="qvQty" value="1" min="1" max="10" readonly>
+              <button onclick="incrementQvQty()">+</button>
+            </div>
+            <button class="btn btn-primary flex-grow" id="qvAddToCartBtn" onclick="addCurrentQvToCart()">
+              <span>Add to Bag</span>
+              <span id="qvBtnPrice">KSh 3,500</span>
+            </button>
+          </div>
+
+          <button class="btn btn-whatsapp w-100" id="qvWhatsAppBtn" onclick="orderCurrentQvOnWhatsApp()">
+            <span>💬 Quick Order via WhatsApp</span>
+          </button>
+
+          <!-- Delivery mini note -->
+          <div class="qv-delivery-note">
+            <span>🚀 <strong>Same Day Delivery</strong> available in Nairobi &amp; Kiambu. Next-day for rest of Kenya via Fargo Courier.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M-PESA CHECKOUT MODAL (Simulated Kenyan Express Checkout) -->
+  <div class="modal-overlay" id="mpesaOverlay" onclick="closeMpesaModal(event)">
+    <div class="modal-container checkout-modal" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeMpesaModal()">×</button>
+      
+      <div class="modal-header-simple">
+        <div class="mpesa-header-badge">
+          <span class="mpesa-badge-logo">M-PESA</span>
+          <span class="badge-subtitle">Express &amp; Card Secure Checkout</span>
+        </div>
+        <h3 class="modal-simple-title">Complete Your Sneaker Order</h3>
+        <p class="modal-simple-desc">Enter your delivery details and M-Pesa phone number to receive an instant payment prompt.</p>
+      </div>
+
+      <form id="mpesaCheckoutForm" onsubmit="handleMpesaSubmit(event)">
+        <div class="form-group">
+          <label for="customerName">Full Name *</label>
+          <input type="text" id="customerName" required placeholder="e.g. Wanjiku Muthoni" value="Wanjiku Muthoni">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="customerPhone">M-Pesa Phone Number *</label>
+            <div class="phone-input-group">
+              <span class="country-prefix">🇰🇪 +254</span>
+              <input type="tel" id="customerPhone" required placeholder="712 345 678" value="712345678" pattern="[0-9]{9,10}">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="customerCity">County / City *</label>
+            <select id="customerCity" required>
+              <option value="Nairobi" selected>Nairobi (Same Day Delivery)</option>
+              <option value="Mombasa">Mombasa</option>
+              <option value="Kisumu">Kisumu</option>
+              <option value="Nakuru">Nakuru</option>
+              <option value="Eldoret">Eldoret</option>
+              <option value="Thika / Kiambu">Thika / Kiambu</option>
+              <option value="Other">Other Kenya Town</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="deliveryAddress">Delivery Address / Landmark *</label>
+          <input type="text" id="deliveryAddress" required placeholder="e.g. Kilimani, Argwings Kodhek Rd, Apt 4B" value="Westlands, Rhapta Road, Kenrail Towers">
+        </div>
+
+        <div class="checkout-summary-box">
+          <div class="summary-line">
+            <span>Order Total:</span>
+            <strong id="mpesaModalTotal">KSh 9,450</strong>
+          </div>
+          <div class="summary-note">A payment prompt will appear on your Safaricom line. Enter your M-Pesa PIN to confirm.</div>
+        </div>
+
+        <button type="submit" class="btn btn-mpesa w-100" id="mpesaSubmitBtn">
+          <span>📲 Send M-Pesa Payment Prompt</span>
+        </button>
+      </form>
+
+      <!-- Simulated STK Push state -->
+      <div class="stk-push-screen" id="stkPushScreen" style="display: none;">
+        <div class="stk-spinner"></div>
+        <h4>STK PIN Prompt Sent! 📲</h4>
+        <p>Please check your phone screen. Enter your M-Pesa PIN for <strong>Pinkysh Sneakers</strong>.</p>
+        <div class="stk-timer" id="stkTimer">Waiting for confirmation (0:15)...</div>
+      </div>
+
+      <!-- Success Confirmation screen -->
+      <div class="order-success-screen" id="orderSuccessScreen" style="display: none;">
+        <div class="success-heart-icon">💖</div>
+        <h3>Order Confirmed! ♡</h3>
+        <p class="success-msg">Asante sana! We've received your payment. Your sneakers are being packed with love and cute stickers.</p>
+        <div class="receipt-box">
+          <div>Receipt: <strong>MP-PKSH-9842</strong></div>
+          <div>Estimated Delivery: <strong>Today by 4:00 PM</strong></div>
+        </div>
+        <button class="btn btn-primary w-100" onclick="finishOrder()">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIZE GUIDE MODAL -->
+  <div class="modal-overlay" id="sizeGuideOverlay" onclick="closeSizeGuideModal(event)">
+    <div class="modal-container size-guide-modal" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeSizeGuideModal()">×</button>
+      <h3>Pinkysh Sneaker Sizing Guide 📏</h3>
+      <p>All our sneakers are true to Kenyan &amp; European standard sizing. If you have wide feet, we recommend sizing up one size!</p>
+      
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>EU Size</th>
+            <th>UK Size</th>
+            <th>US Women</th>
+            <th>Foot Length (cm)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>36</td><td>3.5</td><td>5.5</td><td>22.5 cm</td></tr>
+          <tr><td>37</td><td>4</td><td>6.0</td><td>23.0 cm</td></tr>
+          <tr><td>38</td><td>5</td><td>7.0</td><td>24.0 cm</td></tr>
+          <tr><td>39</td><td>6</td><td>8.0</td><td>25.0 cm</td></tr>
+          <tr><td>40</td><td>6.5</td><td>8.5</td><td>25.5 cm</td></tr>
+          <tr><td>41</td><td>7.5</td><td>9.5</td><td>26.5 cm</td></tr>
+        </tbody>
+      </table>
+      <div class="size-exchange-note">
+        ✨ <em>Free size exchanges within Nairobi within 48 hours if fit isn't 100% perfect!</em>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
